@@ -1,0 +1,1 @@
+docker run --name zabbix-proxy-sqlite3 -e ZBX_HOSTNAME=zabbix_proxy_c1 -p 10051:10051/tcp -e ZBX_SERVER_HOST=zabbix-server.meudominio.br -e ZBX_PROXYOFFLINEBUFFER=24 -e ZBX_CONFIGFREQUENCY=300 -d zabbix/zabbix-proxy-sqlite3:latest
